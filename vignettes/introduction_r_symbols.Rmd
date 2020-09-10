@@ -1,0 +1,112 @@
+---
+title: "Introduction to r2symbols, An R Package for adding symbols to Rmarkdown and Shiny Apps"
+author: "Obinna Obianom"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to r2symbols}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Brief
+
+r2symbols is a part of the R2R package family - http://coursewhiz.org
+
+In preparing Rmarkdown documents and Shiny applications, symbols or special characters or greek letters or currencies e.t.c may be sort after to make the final output look more appealing or professional. R2symbols is an R package that makes this possible. Prior to the development of this package, many authors have preferrably used LaTex codes to accomplish this. The downside to doing this are as follows - 
+
+ - You have to know how to write LaTex codes and be able to mix them in with R codes
+ - Some symbols or currencies sort after are sometimes not available with LaTex
+ - The final output of Rmarkdown knitting or Shiny app rendering is HTML embedded with the mathjax script. This is an extra script that must be incorporated into the document for the units or symbols to convert properly. More so, javascript calls need to be fully functional in the browser for the process to carry on.
+ 
+With r2symbols, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTex is needed.
+
+## Examples
+
+Here are some examples on how to use the r2symbols package
+
+### Attach the library and request the alpha and beta symbols
+
+
+```{r}
+library(r2symbols)
+symbol("alpha")
+symbol("beta")
+# OR together
+symbol("alpha","beta")
+
+#OR use alias
+sym("alpha","beta")
+```
+
+### Attach the library, establish global settings for the symbols and then request symbols
+
+
+```{r}
+library(r2symbols)
+symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
+symbol("copyright","heart")
+#OR use alias
+sym("naira","yen")
+
+#change settings anytime
+symbol.setting(font.size=30,font.weight ="bold",font.color = "red")
+sym("naira","yen")
+
+#Remove global settings
+symbol.setting()#leaving the arguments empty means they are NULL
+symbol("indian","naira")
+
+#OR use alias
+sym("minusplus","infinity")
+
+```
+
+
+### Attach the library, then request symbols with specific settings
+
+
+```{r}
+library(r2symbols)
+symbol("minusplus",font.size=40,font.weight ="normal",font.color = "green")
+#OR use alias
+symbol("integral",font.size=30,font.weight ="bold",font.color = "blue")
+
+#multiple symbols and settings
+sym("naira","yen","minusplus",font.color="violet")
+
+```
+
+
+### Insert inline symbols
+
+For example, you can make a writing using symbol number like` symbol(243)`  for `r symbol(243)`g/mL or with the name like ` symbol("mu")` for `r symbol("mu")`g/mL
+
+OR, I could make a global settings first -
+
+```{r}
+library(r2symbols)
+symbol.setting(font.size=30,font.weight ="bold",font.color = "brown")
+
+```
+
+Then...
+
+For example, you can make a writing using symbol number like `r symbol(243)`g/mL or with the name like `r symbol("mu")`g/mL
+
+
+
+### One may also convert units into proper formats
+
+You can do something like `symbol.units("ug/mL")` -> `r symbol.units("ug/mL")` for ug/mL
+
+## Where documentation for list of symbols and how to call them is at the link below
+
+https://github.com/oobianom/r2symbols
