@@ -1,4 +1,8 @@
 # r2symbols
+
+__CRAN Downloads Metrics__
+<iframe src="https://cranlogs.r-pkg.org/badges/r2symbols" width="100%" height="30"></iframe>
+
 R2Symbols : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
 
 ![](http://www.labcorners.com/mainsite/img/r2symbols.png)
