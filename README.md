@@ -1,7 +1,7 @@
 # r2symbols
 
 R2Symbols : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
-
+![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
 ![](http://www.labcorners.com/mainsite/img/r2symbols.png)
 
 ## Quick example in R
