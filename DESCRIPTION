@@ -20,4 +20,4 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 Language: en-US
 LazyData: true
-RoxygenNote: 7.0.1
+RoxygenNote: 7.1.2

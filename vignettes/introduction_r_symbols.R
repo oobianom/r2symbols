@@ -1,10 +1,10 @@
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(r2symbols)
 symbol("alpha")
 symbol("beta")
@@ -14,7 +14,7 @@ symbol("alpha","beta")
 #OR use alias
 sym("alpha","beta")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(r2symbols)
 symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
 symbol("copyright","heart")
@@ -33,7 +33,7 @@ symbol("indian","naira")
 sym("minusplus","infinity")
 
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(r2symbols)
 symbol("minusplus",font.size=40,font.weight ="normal",font.color = "green")
 #OR use alias
@@ -43,7 +43,7 @@ symbol("integral",font.size=30,font.weight ="bold",font.color = "blue")
 sym("naira","yen","minusplus",font.color="violet")
 
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(r2symbols)
 symbol.setting(font.size=30,font.weight ="bold",font.color = "brown")
 

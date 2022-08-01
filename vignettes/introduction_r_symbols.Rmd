@@ -4,7 +4,7 @@ author: "Obinna Obianom"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to r2symbols}
+  %\VignetteIndexEntry{Introduction to r2symbols, An R Package for adding symbols to Rmarkdown and Shiny Apps}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

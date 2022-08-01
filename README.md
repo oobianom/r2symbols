@@ -1,11 +1,13 @@
-# R2Symbols : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
+# The R2Symbols R package : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
+## Official website: https://r2symbols.obi.obianom.com
 
-![](http://www.labcorners.com/mainsite/img/r2symbols.png)
+
+![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
+![](https://coursewhiz.org/mainsite/img/r2symbols.png)
 
 ## Quick example in R
 
 ` install.packages("r2symbols") `
-
 ` library("r2symbols") `
 
 ` symbol("alpha") `
@@ -21,5 +23,5 @@ View information about this at http://coursewhiz.org/mainsite/r2symbols.html
 
 ## A complete chart for the list of symbols and their corresponding identifiers
 
-Currently on its way, being put together as of September. Email me at idonshayo@gmail.com if it seems to be taking too long. 
-Interests beats my other priorities.
+For a complete list of all the symbols and codes, please go to this link. Thank you.
+http://coursewhiz.org/mainsite/r2symbols_cheatcheat.html
