@@ -1,11 +1,11 @@
-# r2symbols
-R2Symbols : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
+# R2Symbols : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
 
 ![](http://www.labcorners.com/mainsite/img/r2symbols.png)
 
 ## Quick example in R
 
 ` install.packages("r2symbols") `
+
 ` library("r2symbols") `
 
 ` symbol("alpha") `
