@@ -19,9 +19,10 @@
 
 
 ## Now published on CRAN and also available here in github
-View information about this at http://coursewhiz.org/mainsite/r2symbols.html
+View information about this at https://cran.r-project.org/web/packages/r2symbols
 
 ## A complete chart for the list of symbols and their corresponding identifiers
 
 For a complete list of all the symbols and codes, please go to this link. Thank you.
-http://coursewhiz.org/mainsite/r2symbols_cheatcheat.html
+ - https://r2symbols.obi.obianom.com/
+ - http://coursewhiz.org/mainsite/r2symbols_cheatcheat.html
