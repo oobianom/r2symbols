@@ -1,6 +1,6 @@
 /*written by Obinna N Obianom */
 
-var symbolpkgkeys = ({alpha : "&alpha;",the: "&delta;",beta: '&beta'});
+var symbolpkgkeys = ({alpha : "&alpha;",the: "&delta;",beta: '&beta;'});
 
 
 
