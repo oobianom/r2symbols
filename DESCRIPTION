@@ -1,17 +1,18 @@
 Package: r2symbols
 Type: Package
 Title: Symbols for 'Markdown' and 'Shiny' Application
-Version: 0.1
+Version: 1.1
 Author: Obinna Obianom
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
 Description: Direct insertion of symbols (e.g. currencies, letters, arrows, mathematical symbols and so on) into 'Rmarkdown' documents and 'Shiny' applications by incorporating 'HTML' hex codes.
 License: MIT + file LICENSE
-URL: https://github.com/oobianom/r2symbols
+URL: https://r2symbols.obi.obianom.com
 BugReports: https://github.com/oobianom/r2symbols
 Depends: 
     R (>= 3.4)
 Imports: 
-    utils
+    utils,
+    htmltools
 Suggests: 
     rmarkdown,
     knitr,
@@ -20,4 +21,4 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 Language: en-US
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.1.1
