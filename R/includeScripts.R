@@ -2,6 +2,10 @@
 #'
 #' Transform texts in HTML to symbols
 #'
+#' @param font.size font size as integer
+#' @param font.weight font weight as integer
+#' @param font.color font color e.g. red, blue, cyan
+#'
 #' @note This function simple inserts a script within the output HTML, which transforms the content using the relevant HTML codes.
 #'
 #' @return A rendered HTML where simple text is transformed to symbols using HTML codes
@@ -13,7 +17,7 @@
 #'
 
 
-use.r2symbols <- function() {
+use.r2symbols <- function(font.size = NULL, font.weight = NULL, font.color = NULL) {
   ssp <- "r2symbols"
   vs <- "1.1"
   template.loc1 <- file.path(find.package(package = ssp), "includes")
