@@ -1,8 +1,10 @@
 # r2symbols 1.1
 
-## Features
+## Scope of work
 
-Work is now officially progress as of August 2022
+ - Simplify calls to symbol
+ - Allow use of the package much like how MathJax is used
+ - Build addin UI for r2symbols
 
 # r2symbols 1.0
 
