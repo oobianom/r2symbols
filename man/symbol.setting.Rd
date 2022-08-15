@@ -9,7 +9,7 @@ symbol.setting(font.size = NULL, font.weight = NULL, font.color = NULL)
 \arguments{
 \item{font.size}{font size as integer}
 
-\item{font.weight}{font weight as integer}
+\item{font.weight}{font weight eg. normal, bold or lighter}
 
 \item{font.color}{font color e.g. red, blue, cyan}
 }

@@ -21,5 +21,5 @@ Suggests:
 Encoding: UTF-8
 VignetteBuilder: knitr
 Language: en-US
-LazyData: true
+LazyData: false
 RoxygenNote: 7.1.1

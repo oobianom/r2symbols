@@ -3,7 +3,7 @@
 #' Font styling for symbols
 #'
 #' @param font.size font size as integer
-#' @param font.weight font weight as integer
+#' @param font.weight font weight eg. normal, bold or lighter
 #' @param font.color font color e.g. red, blue, cyan
 #'
 #' @return No values returned
