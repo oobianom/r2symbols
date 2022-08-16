@@ -26,6 +26,10 @@ One line code to transform entire document
 ```{r eval=F}
 library(r2symbols)
 trans.r2symbols(font.color="green", font.weight = "bold",font.size = 30)
+
+# within the text, add icons
+
+sample `alpha` text and `34` sample `u` text
 ```
 
 ## Now published on CRAN and also available here in github
