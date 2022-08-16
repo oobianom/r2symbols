@@ -13,11 +13,20 @@
 
 ` symbol("alpha") `
 
+`sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")`
+
 ` sym("heart") `
 
 ` symbol(23) `
 
+## Added in v 1.1
 
+One line code to transform entire document
+
+```{r eval=F}
+library(r2symbols)
+trans.r2symbols(font.color="green", font.weight = "bold",font.size = 30)
+```
 
 ## Now published on CRAN and also available here in github
 View information about this at https://cran.r-project.org/web/packages/r2symbols
