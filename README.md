@@ -27,7 +27,7 @@ One line code to transform entire document
 # library call and setting at the top the document
 
 library(r2symbols)
-trans.r2symbols(font.color="green", font.weight = "bold",font.size = 30)
+trans.r2symbols(font.color="green",font.weight = "bold",font.size = 30)
 
 # within the text, add icons
 
