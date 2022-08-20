@@ -7,7 +7,7 @@
 ![](https://coursewhiz.org/mainsite/img/r2symbols.png) 
 
 
-# Quick example in R
+# Quick example in R 
 
 First, install and load...
 
