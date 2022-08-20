@@ -2,7 +2,7 @@
 
 ## Planned
 
- - Build addin UI for r2symbols
+ - Build addin UI for r2symbols 
  
 # r2symbols 1.1
 

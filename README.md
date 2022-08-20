@@ -4,20 +4,15 @@
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
-![](https://coursewhiz.org/mainsite/img/r2symbols.png)
+![](https://coursewhiz.org/mainsite/img/r2symbols.png) 
 
-## Quick example in R
+
+# Quick example in R
+
+First, install and load...
 
 ` install.packages("r2symbols") `
 ` library("r2symbols") `
-
-` symbol("alpha") `
-
-`sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")`
-
-` sym("heart") `
-
-` symbol(23) `
 
 ## Added in v 1.1
 
@@ -34,6 +29,15 @@ trans.r2symbols(font.color="green",font.weight = "bold",font.size = 30)
 sample `alpha` text and `34` sample `u` text
 ```
 
+## v 0.1 features
+
+` symbol("alpha") `
+
+`sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")`
+
+` sym("heart") `
+
+` symbol(23) `
 ## Now published on CRAN and also available here in github
 View information about this at https://cran.r-project.org/web/packages/r2symbols
 
