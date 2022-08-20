@@ -1,4 +1,4 @@
-# The R2Symbols R package : Direct insertion of HTML symbol entities for use in Rmarkdown and Shiny Applications
+# The r2Symbols R package : Direct insertion of HTML symbol entities for use in Rmarkdown, Quarto and Shiny Applications
 ## Official website: [https://r2symbols.obi.obianom.com](https://r2symbols.obi.obianom.com/articles/newversion_r_symbols.html)
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
