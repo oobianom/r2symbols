@@ -4,7 +4,7 @@
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
-![](https://coursewhiz.org/mainsite/img/r2symbols.png) 
+![](https://coursewhiz.org/mainsite/img/r2symbols1.png) 
 
 
 # Quick example in R 
