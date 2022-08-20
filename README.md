@@ -11,8 +11,12 @@
 
 First, install and load...
 
-` install.packages("r2symbols") `
-` library("r2symbols") `
+```{r eval=F}
+install.packages("r2symbols")
+
+library("r2symbols")
+
+```
 
 ## Added in v 1.1
 
