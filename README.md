@@ -3,7 +3,8 @@
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
-![](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
+![ezgif-3-efa9cce31d.gif](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
+
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
 ![](https://coursewhiz.org/mainsite/img/r2symbols1.png) 
 
