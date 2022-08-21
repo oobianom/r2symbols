@@ -1,3 +1,5 @@
+![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
+
 # r2symbols 1.2
 
 ## Planned
