@@ -6,7 +6,7 @@
 ![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
-![](https://coursewhiz.org/mainsite/img/r2symbols1.png) 
+![](https://r2symbols.obi.obianom.com/cards/symbol_carsd1.png) 
 
 
 # Quick example in R 
