@@ -6,6 +6,11 @@
 ![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
+
+Transform HTML into symbols
+![](https://r2symbols.obi.obianom.com/cards/transr2symbols_carsd1.png) 
+
+Get a desired symbol
 ![](https://r2symbols.obi.obianom.com/cards/symbol_carsd1.png) 
 
 
