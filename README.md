@@ -40,7 +40,7 @@ trans.r2symbols(font.color="green",font.weight = "bold",font.size = 30)
 sample `alpha` text and `34` sample `u` text
 ```
 
-## v 0.1 features
+## v 0.1 features are still available
 
 ` symbol("alpha") `
 
@@ -49,6 +49,13 @@ sample `alpha` text and `34` sample `u` text
 ` sym("heart") `
 
 ` symbol(23) `
+
+```{r eval=F}
+# you could also use within the text without needing to declare trans.r2symbols()
+
+sample `symbol(23)` text and `symbol('alpha')` sample `symbol('trademark')` text
+```
+
 ## Now published on CRAN and also available here in github
 View information about this at https://cran.r-project.org/web/packages/r2symbols
 
