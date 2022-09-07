@@ -53,7 +53,7 @@ sample `alpha` text and `34` sample `u` text
 ```{r eval=F}
 # you could also use within the text without needing to declare trans.r2symbols()
 
-sample `symbol(23)` text and `symbol('alpha')` sample `symbol('trademark')` text
+sample `r symbol(23)` text and `r symbol('alpha')` sample `r symbol('trademark')` text
 ```
 
 ## Now published on CRAN and also available here in github
