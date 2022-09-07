@@ -42,9 +42,20 @@ sample `alpha` text and `34` sample `u` text
 
 ## v 0.1 features are still available
 
-` symbol("alpha") `
+```{r}
+#load library
+library(r2symbols)
 
-`sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")`
+#apply global settings
+symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
+
+#start including in texts
+
+symbol("alpha") 
+
+sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")
+
+```
 
 ` sym("heart") `
 
