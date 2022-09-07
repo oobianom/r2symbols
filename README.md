@@ -50,19 +50,16 @@ library(r2symbols)
 symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
 
 #start including in texts
-
 symbol("alpha") 
 
 sym("naira","yen",font.size=30,font.weight ="bold",font.color = "red")
 
-```
+sym("heart")
 
-` sym("heart") `
+symbol(23)
 
-` symbol(23) `
 
-```{r eval=F}
-# you could also use within the text without needing to declare trans.r2symbols()
+# you could use within the text without needing to declare trans.r2symbols()
 
 sample `r symbol(23)` text and `r symbol('alpha')` sample `r sym('trademark')` text
 ```
@@ -74,4 +71,3 @@ View information about this at https://cran.r-project.org/web/packages/r2symbols
 
 For a complete list of all the symbols and codes, please go to this link. Thank you.
  - https://r2symbols.obi.obianom.com/
- - http://coursewhiz.org/mainsite/r2symbols_cheatcheat.html
