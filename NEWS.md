@@ -2,13 +2,13 @@
 
 # r2symbols 1.2
 
-## Planned
+## Features
 
- - Build addin UI for r2symbols 
+ - Fixes in the use of sym and symbol
  
 # r2symbols 1.1
 
-## Scope of work
+## Features
 
  - Simplify calls to symbol by allowing global
  - Allow use of the package much like how MathJax is used

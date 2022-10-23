@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -11,7 +12,7 @@
 
 <meta name="author" content="Obinna Obianom" />
 
-<meta name="date" content="2022-08-01" />
+<meta name="date" content="2022-10-23" />
 
 <title>Introduction to r2symbols, An R Package for adding symbols to Rmarkdown and Shiny Apps</title>
 
@@ -334,25 +335,25 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Introduction to r2symbols, An R Package for
 adding symbols to Rmarkdown and Shiny Apps</h1>
 <h4 class="author">Obinna Obianom</h4>
-<h4 class="date">2022-08-01</h4>
+<h4 class="date">2022-10-23</h4>
 
 
 
 <div id="brief" class="section level2">
 <h2>Brief</h2>
-<p>r2symbols is a part of the R2R package family - <a href="http://coursewhiz.org" class="uri">http://coursewhiz.org</a></p>
+<p>r2symbols is a part of the R2 R package family - <a href="https://r2symbols.obi.obianom.com" class="uri">https://r2symbols.obi.obianom.com</a></p>
 <p>In preparing Rmarkdown documents and Shiny applications, symbols or
 special characters or greek letters or currencies e.t.c may be sort
 after to make the final output look more appealing or professional.
 R2symbols is an R package that makes this possible. Prior to the
-development of this package, many authors have preferrably used LaTex
+development of this package, many authors have preferrably used LaTeX
 codes to accomplish this. The downside to doing this are as follows
 -</p>
 <ul>
-<li>You have to know how to write LaTex codes and be able to mix them in
+<li>You have to know how to write LaTeX codes and be able to mix them in
 with R codes</li>
 <li>Some symbols or currencies sort after are sometimes not available
-with LaTex</li>
+with LaTeX</li>
 <li>The final output of Rmarkdown knitting or Shiny app rendering is
 HTML embedded with the mathjax script. This is an extra script that must
 be incorporated into the document for the units or symbols to convert
@@ -363,7 +364,7 @@ browser for the process to carry on.</li>
 HTML codes available for many of these symbols, so this package simply
 incorporates the appropriate symbol into the document and in the final
 ouput, mathjax script is not needed for it to show up properly.
-Additionally, the code you will be writing is all R code and no LaTex is
+Additionally, the code you will be writing is all R code and no LaTeX is
 needed.</p>
 </div>
 <div id="examples" class="section level2">
@@ -373,54 +374,54 @@ needed.</p>
 <h3>Attach the library and request the alpha and beta symbols</h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;alpha&quot;</span>)</span></code></pre></div>
-α
-symbol(&quot;beta&quot;)
-β
-# OR together
-symbol(&quot;alpha&quot;,&quot;beta&quot;)
-αβ
-
-#OR use alias
-sym(&quot;alpha&quot;,&quot;beta&quot;)
-αβ
+<p>α</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;beta&quot;</span>)</span></code></pre></div>
+<p>β</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># OR together</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;alpha&quot;</span>,<span class="st">&quot;beta&quot;</span>)</span></code></pre></div>
+<p>αβ</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#OR use alias</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;alpha&quot;</span>,<span class="st">&quot;beta&quot;</span>)</span></code></pre></div>
+<p>αβ</p>
 </div>
 <div id="attach-the-library-establish-global-settings-for-the-symbols-and-then-request-symbols" class="section level3">
 <h3>Attach the library, establish global settings for the symbols and
 then request symbols</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;purple&quot;</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;copyright&quot;</span>,<span class="st">&quot;heart&quot;</span>)</span></code></pre></div>
-<span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">©</span><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">♥</span>
-#OR use alias
-sym(&quot;naira&quot;,&quot;yen&quot;)
-<span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">₦</span><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">¥</span>
-
-#change settings anytime
-symbol.setting(font.size=30,font.weight =&quot;bold&quot;,font.color = &quot;red&quot;)
-sym(&quot;naira&quot;,&quot;yen&quot;)
-<span style="font-size:30px!important;font-weight:bold!important;color:red!important;">₦</span><span style="font-size:30px!important;font-weight:bold!important;color:red!important;">¥</span>
-
-#Remove global settings
-symbol.setting()#leaving the arguments empty means they are NULL
-symbol(&quot;indian&quot;,&quot;naira&quot;)
-₦
-
-#OR use alias
-sym(&quot;minusplus&quot;,&quot;infinity&quot;)
-∓
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;copyright&quot;</span>,<span class="st">&quot;heart&quot;</span>,<span class="st">&quot;chessq&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">©</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♥</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♕</span></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#OR use alias</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;naira&quot;</span>,<span class="st">&quot;yen&quot;</span>,<span class="st">&quot;music1&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">₦</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">¥</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♫</span></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#change settings anytime</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">30</span>,<span class="at">font.weight =</span><span class="st">&quot;bold&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;naira&quot;</span>,<span class="st">&quot;yen&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:30px!important;font-weight:bold!important;color:red!important;">₦</span><span style="font-size:30px!important;font-weight:bold!important;color:red!important;">¥</span></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Remove global settings</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>()<span class="co">#leaving the arguments empty means they are NULL</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;indian&quot;</span>,<span class="st">&quot;naira&quot;</span>)</span></code></pre></div>
+<p>₦</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#OR use alias</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;minusplus&quot;</span>,<span class="st">&quot;infinity&quot;</span>)</span></code></pre></div>
+<p>∓</p>
 </div>
 <div id="attach-the-library-then-request-symbols-with-specific-settings" class="section level3">
 <h3>Attach the library, then request symbols with specific settings</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;minusplus&quot;</span>,<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;green&quot;</span>)</span></code></pre></div>
-<span style="font-size:40px!important;font-weight:normal!important;color:green!important;">∓</span>
-#OR use alias
-symbol(&quot;integral&quot;,font.size=30,font.weight =&quot;bold&quot;,font.color = &quot;blue&quot;)
-<span style="font-size:30px!important;font-weight:bold!important;color:blue!important;">∫</span>
-
-#multiple symbols and settings
-sym(&quot;naira&quot;,&quot;yen&quot;,&quot;minusplus&quot;,font.color=&quot;violet&quot;)
-<span style="color:violet!important;">₦</span><span style="color:violet!important;">¥</span><span style="color:violet!important;">∓</span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;minusplus&quot;</span>,<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;green&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:40px!important;font-weight:normal!important;color:green!important;">∓</span></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#OR use alias</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;integral&quot;</span>,<span class="at">font.size=</span><span class="dv">30</span>,<span class="at">font.weight =</span><span class="st">&quot;bold&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:30px!important;font-weight:bold!important;color:blue!important;">∫</span></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#multiple symbols and settings</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;naira&quot;</span>,<span class="st">&quot;yen&quot;</span>,<span class="st">&quot;minusplus&quot;</span>,<span class="at">font.color=</span><span class="st">&quot;violet&quot;</span>)</span></code></pre></div>
+<p><span style="color:violet!important;">₦</span><span style="color:violet!important;">¥</span><span style="color:violet!important;">∓</span></p>
 </div>
 <div id="insert-inline-symbols" class="section level3">
 <h3>Insert inline symbols</h3>
@@ -428,8 +429,8 @@ sym(&quot;naira&quot;,&quot;yen&quot;,&quot;minusplus&quot;,font.color=&quot;vio
 like<code>symbol(243)</code> for φg/mL or with the name like
 <code>symbol(&quot;mu&quot;)</code> for μg/mL</p>
 <p>OR, I could make a global settings first -</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">30</span>,<span class="at">font.weight =</span><span class="st">&quot;bold&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;brown&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">30</span>,<span class="at">font.weight =</span><span class="st">&quot;bold&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;brown&quot;</span>)</span></code></pre></div>
 <p>Then…</p>
 <p>For example, you can make a writing using symbol number like
 <span style="font-size:30px!important;font-weight:bold!important;color:brown!important;">φ</span>g/mL

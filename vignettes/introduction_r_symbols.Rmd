@@ -18,15 +18,15 @@ knitr::opts_chunk$set(
 
 ## Brief
 
-r2symbols is a part of the R2R package family - http://coursewhiz.org
+r2symbols is a part of the R2 R package family - https://r2symbols.obi.obianom.com
 
-In preparing Rmarkdown documents and Shiny applications, symbols or special characters or greek letters or currencies e.t.c may be sort after to make the final output look more appealing or professional. R2symbols is an R package that makes this possible. Prior to the development of this package, many authors have preferrably used LaTex codes to accomplish this. The downside to doing this are as follows - 
+In preparing Rmarkdown documents and Shiny applications, symbols or special characters or greek letters or currencies e.t.c may be sort after to make the final output look more appealing or professional. R2symbols is an R package that makes this possible. Prior to the development of this package, many authors have preferrably used LaTeX codes to accomplish this. The downside to doing this are as follows - 
 
- - You have to know how to write LaTex codes and be able to mix them in with R codes
- - Some symbols or currencies sort after are sometimes not available with LaTex
+ - You have to know how to write LaTeX codes and be able to mix them in with R codes
+ - Some symbols or currencies sort after are sometimes not available with LaTeX
  - The final output of Rmarkdown knitting or Shiny app rendering is HTML embedded with the mathjax script. This is an extra script that must be incorporated into the document for the units or symbols to convert properly. More so, javascript calls need to be fully functional in the browser for the process to carry on.
  
-With r2symbols, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTex is needed.
+With r2symbols, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTeX is needed.
 
 ## Examples
 
@@ -51,10 +51,10 @@ sym("alpha","beta")
 
 ```{r}
 library(r2symbols)
-symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
-symbol("copyright","heart")
+symbol.setting(font.size=40,font.weight ="normal",font.color = "blue")
+symbol("copyright","heart","chessq")
 #OR use alias
-sym("naira","yen")
+sym("naira","yen","music1")
 
 #change settings anytime
 symbol.setting(font.size=30,font.weight ="bold",font.color = "red")

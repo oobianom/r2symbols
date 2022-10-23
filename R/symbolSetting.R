@@ -10,9 +10,9 @@
 #'
 #' @examples
 #' symbol.setting(40, "bold", "green") # ascribe settings for all symbols
-#' symbol("alpha") # display the apha symbol
+#' symbol("alpha") # display the alpha symbol
 #' symbol.setting() # clear settings for symbols
-#' symbol("alpha") # dislay the alpha symbol
+#' symbol("alpha") # display the alpha symbol
 #' @export
 #'
 
@@ -34,9 +34,9 @@ symbol.setting <- function(font.size = NULL, font.weight = NULL, font.color = NU
 #'
 #' @examples
 #' symbol.setting(40, "bold", "green") # ascribe settings for all symbols
-#' symbol("alpha") # display the apha symbol
+#' symbol("alpha") # display the alpha symbol
 #' symbol.setting() # clear settings for symbols
-#' symbol("alpha") # dislay the alpha symbol
+#' symbol("alpha") # display the alpha symbol
 #' @export
 #'
 

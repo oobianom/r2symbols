@@ -24,15 +24,18 @@
 #' @export
 
 symbol <- function(..., font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
-  if(!exists('.symbols_ph'))symload()
+  if(!is.null(getOption("r2symbols.font.size"))) font.size <- getOption("r2symbols.font.size")
+  if(!is.null(getOption("r2symbols.font.weight"))) font.weight <- getOption("r2symbols.font.weight")
+  if(!is.null(getOption("r2symbols.font.color"))) font.color <- getOption("r2symbols.font.color")
+
+  if(!exists('.symbols_ph'))symload(font.size = font.size, font.weight = font.weight, font.color = font.color)
   name0 <- unlist(list(...))
   if(is.null(name0))return(NULL)
   tranhtml0 <- NULL
+
   for (name in name0) {
-    if (!exists(".symbols")) sym(font.size, font.weight, font.color)
-    if (!exists(".symbols")) {
-      return()
-    } # return if the symbol list has nothing
+    if (!exists(".symbols")) sym.setting(font.size, font.weight, font.color)
+    if (!exists(".symbols")) { return() } # return if the symbol list has nothing
     newsym <- .symbols[.symbols$alias == name, ] # see if the name exists in the alias
     if (!nrow(newsym)) newsym <- .symbols[.symbols$alias2 == name, ] # else see if the name exists in the alias
     if ((!nrow(newsym)) & (search.units.each)) newsym <- .symbols[.symbols$alias3 == name, ] # else see if the name exists in the alias

@@ -25,7 +25,7 @@ library("r2symbols")
 
 ```
 
-## Added in v 1.1
+## Added in the new version
 
 One line code to transform entire document
 

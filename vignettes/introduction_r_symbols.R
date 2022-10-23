@@ -16,10 +16,10 @@ sym("alpha","beta")
 
 ## -----------------------------------------------------------------------------
 library(r2symbols)
-symbol.setting(font.size=40,font.weight ="normal",font.color = "purple")
-symbol("copyright","heart")
+symbol.setting(font.size=40,font.weight ="normal",font.color = "blue")
+symbol("copyright","heart","chessq")
 #OR use alias
-sym("naira","yen")
+sym("naira","yen","music1")
 
 #change settings anytime
 symbol.setting(font.size=30,font.weight ="bold",font.color = "red")
