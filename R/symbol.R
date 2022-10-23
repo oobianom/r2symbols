@@ -24,9 +24,9 @@
 #' @export
 
 symbol <- function(..., font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
-  if(!is.null(getOption("r2symbols.font.size"))) font.size <- getOption("r2symbols.font.size")
-  if(!is.null(getOption("r2symbols.font.weight"))) font.weight <- getOption("r2symbols.font.weight")
-  if(!is.null(getOption("r2symbols.font.color"))) font.color <- getOption("r2symbols.font.color")
+  if(is.null(font.size) & (!is.null(getOption("r2symbols.font.size")))) font.size <- getOption("r2symbols.font.size")
+  if(is.null(font.weight) & (!is.null(getOption("r2symbols.font.weight")))) font.weight <- getOption("r2symbols.font.weight")
+  if(is.null(font.color) & (!is.null(getOption("r2symbols.font.color")))) font.color <- getOption("r2symbols.font.color")
 
   if(!exists('.symbols_ph'))symload(font.size = font.size, font.weight = font.weight, font.color = font.color)
   name0 <- unlist(list(...))

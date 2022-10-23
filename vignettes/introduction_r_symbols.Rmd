@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Brief
+## Brief background
 
 r2symbols is a part of the R2 R package family - https://r2symbols.obi.obianom.com
 
