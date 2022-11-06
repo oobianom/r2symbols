@@ -1,12 +1,12 @@
 ---
-title: "r2symbols version 1.1, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications"
+title: "r2symbols version 1.2, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications"
 author: "Obinna Obianom"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
     toc: true
 vignette: >
-  %\VignetteIndexEntry{r2symbols version 1.1, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications}
+  %\VignetteIndexEntry{r2symbols version 1.2, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -29,7 +29,7 @@ trans.r2symbols(font.color="green", font.weight = "bold",font.size = 30)
 
 With the `r2symbols` package, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTex is needed.
 
-## New Features in v1.1
+## New Features Since in v1.1
 
  - Inclusion of more short symbols names
  
