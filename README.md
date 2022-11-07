@@ -1,5 +1,6 @@
 # The r2Symbols R package : Direct insertion of HTML symbol entities for use in Rmarkdown, Quarto and Shiny Applications
 ## Official website: [https://r2symbols.obi.obianom.com](https://r2symbols.obi.obianom.com/articles/newversion_r_symbols.html)
+### Other packages required for r2symbols: https://depends.rpkg.net/package/r2symbols
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/rPkgNet-published-orange)](https://rnetwork.obi.obianom.com/package/r2symbols) <img src="https://rpkg.net/pub-age/r2symbols"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
