@@ -8,11 +8,9 @@
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
 
-#### Transform entire Rmarkdown & Quarto documents with symbols
-![](https://r2symbols.obi.obianom.com/cards/transr2symbols_carsd1.png) 
+ - [x] Transform entire Rmarkdown & Quarto documents with symbols
+ - [x] Get a desired symbol
 
-#### Get a desired symbol
-![](https://r2symbols.obi.obianom.com/cards/symbol_carsd1.png) 
 
 
 # Quick example in R 
