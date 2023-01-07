@@ -1,5 +1,6 @@
-# r2symbols 1.3
+![https://www.youtube.com/watch?v=TaR-bwZxfuA](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
 
+# r2symbols 1.3
 ## Features
 
  - [x] Addition of over 800 new symbols
