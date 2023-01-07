@@ -72,4 +72,4 @@ View information about this at https://cran.r-project.org/web/packages/r2symbols
 ## A complete chart for the list of symbols and their corresponding identifiers
 
 For a complete list of all the symbols and codes, please go to this link. Thank you.
- - https://r2symbols.obi.obianom.com/
+ - https://r2symbols.obi.obianom.com/symbols
