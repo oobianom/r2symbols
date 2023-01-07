@@ -4,12 +4,15 @@
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/rPkgNet-published-orange)](https://rnetwork.obi.obianom.com/package/r2symbols) <img src="https://rpkg.net/pub-age/r2symbols"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
-[![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/symbols/assets/newlist.png)](https://r2symbols.obi.obianom.com/symbols)
+#### Get started with how to use: Click here <a href="articles/introduction_r_symbols.html" target="_nzddssd">TUTORIAL 1</a> or <a href="articles/newversion_r_symbols.html" target="_nzddsffsd">TUTORIAL 2</a>
 
-![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
+  - [x] Transform entire Rmarkdown & Quarto documents with symbols
+  - [x] Easily include symbols, arrows, smiley faces and so on in you Shiny applications
 
- - [x] Transform entire Rmarkdown & Quarto documents with symbols
- - [x] Get a desired symbol
+[![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/symbols/assets/newlist.png)](https://r2symbols.obi.obianom.com/symbols/)
+
+![](https://coursewhiz.org/mainsite/img/r2symbols.png)
+
 
 
 
