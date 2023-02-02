@@ -28,6 +28,10 @@ In preparing Rmarkdown documents and Shiny applications, symbols or special char
  
 With r2symbols, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTeX is needed.
 
+## Comprehensive list of symbols
+
+https://r2symbols.obi.obianom.com/symbols/
+
 ## Examples
 
 Here are some examples on how to use the r2symbols package
@@ -39,6 +43,7 @@ Here are some examples on how to use the r2symbols package
 library(r2symbols)
 symbol("alpha")
 symbol("beta")
+symbol(456)
 # OR together
 symbol("alpha","beta")
 
@@ -51,14 +56,15 @@ sym("alpha","beta")
 
 ```{r}
 library(r2symbols)
-symbol.setting(font.size=40,font.weight ="normal",font.color = "blue")
-symbol("copyright","heart","chessq")
+symbol.setting(font.size=50,font.weight ="normal",font.color = "blue")
+symbol("copyright","heart","chessq","ox","deer","beer")
 #OR use alias
 sym("naira","yen","music1")
 
 #change settings anytime
 symbol.setting(font.size=30,font.weight ="bold",font.color = "red")
 sym("naira","yen")
+sym("arrow-left","arrow-up")
 
 #Remove global settings
 symbol.setting()#leaving the arguments empty means they are NULL

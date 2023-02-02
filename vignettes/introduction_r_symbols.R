@@ -8,6 +8,7 @@ knitr::opts_chunk$set(
 library(r2symbols)
 symbol("alpha")
 symbol("beta")
+symbol(456)
 # OR together
 symbol("alpha","beta")
 
@@ -16,14 +17,15 @@ sym("alpha","beta")
 
 ## -----------------------------------------------------------------------------
 library(r2symbols)
-symbol.setting(font.size=40,font.weight ="normal",font.color = "blue")
-symbol("copyright","heart","chessq")
+symbol.setting(font.size=50,font.weight ="normal",font.color = "blue")
+symbol("copyright","heart","chessq","ox","deer","beer")
 #OR use alias
 sym("naira","yen","music1")
 
 #change settings anytime
 symbol.setting(font.size=30,font.weight ="bold",font.color = "red")
 sym("naira","yen")
+sym("arrow-left","arrow-up")
 
 #Remove global settings
 symbol.setting()#leaving the arguments empty means they are NULL
