@@ -1,12 +1,16 @@
 ![https://www.youtube.com/watch?v=TaR-bwZxfuA](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
 
+# r2symbols 1.4
+## Planned Features
+ - [ ] User interface for easy use of symbols
+ - [ ] Functions to allow obtaining symbols belonging to a particular category
+ 
 # r2symbols 1.3
 ## Features
 
  - [x] Addition of over 800 new symbols
  - [x] Fix of bugs associated with changing symbols settings in Rmarkdown
- - [ ] User interface for easy use of symbols
- 
+
  
 # r2symbols 1.2
 
