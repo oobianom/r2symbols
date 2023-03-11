@@ -5,7 +5,7 @@ Version: 1.4
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Description: Direct insertion of over 1000 symbols (e.g. currencies, letters, emoji, arrows, mathematical symbols and so on) into 'Rmarkdown' documents and 'Shiny' applications by incorporating 'HTML' hex codes.
+Description: Direct insertion of over 1000 symbols (e.g. currencies, letters, emojis, arrows, mathematical symbols and so on) into 'Rmarkdown' documents and 'Shiny' applications by incorporating 'HTML' hex codes.
 License: MIT + file LICENSE
 URL: https://r2symbols.obi.obianom.com
 BugReports: https://github.com/oobianom/r2symbols/issues

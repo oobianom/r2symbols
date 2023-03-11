@@ -1,12 +1,12 @@
 ---
-title: "r2symbols version 1.2, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications"
+title: "Add Multiple Symbols by Keywords or Category in your Rmarkdown or Quarto documents or Shiny applications"
 author: "Obinna Obianom"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
     toc: true
 vignette: >
-  %\VignetteIndexEntry{r2symbols version 1.2, Simplify the inclusion of Symbols in your Rmarkdown or Quarto documents or Shiny applications}
+  %\VignetteIndexEntry{Add Multiple Symbols by Keywords or Category in your Rmarkdown or Quarto documents or Shiny applications}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,127 +18,28 @@ vignette: >
 
 ## Summary
 
-<div style="background-color:brown;color:white;border:1px solid #FF8A8A;padding:8px">
-__The new version of the r2symbols package simplifies  the way  to transform text into symbols within your documents. Simply include the library call and the function calls above, and the r2symbol takes care of transforming text throughout your document to appropriate symbols as shown below__
-</div>
+R2SYMBOLS package introduced two new functions that allows inclusion of multiple symbols by keyword. Below are further details on how to use these functions
 
-```{r eval=F}
-library(r2symbols)
-trans.r2symbols(font.color="green", font.weight = "bold",font.size = 30)
-```
 
-With the `r2symbols` package, the idea is very simple. There are already a lot of HTML codes available for many of these symbols, so this package simply incorporates the appropriate symbol into the document and in the final ouput, mathjax script is not needed for it to show up properly. Additionally, the code you will be writing is all R code and no LaTex is needed.
-
-## New Features Since in v1.1
-
- - Inclusion of more short symbols names
- 
- - Simplification of symbol calls in Rmarkdown and Quarto documents using the `trans.r2symbols()` function
-
-## How to use in Rmarkdown and Quarto documents
-
-### 1. Include library
+### Include library
 
 ```{r eval=FALSE}
 library(r2symbols)
 ```
 
-### 2. Add function call
+### Use the symCat() function
 
-```{r eval=FALSE}
-trans.r2symbols(font.color="gray", font.weight = "light",font.size = 12)
+```{r}
+symCat(category = "arrow", font.color="gray", font.weight = "light",font.size = 20)
 ```
 
-### 3. Begin writing your documents
+### Use the symCat() function
 
-To use, wrap the symbol code or alias (found at [r2symbols.obi.obianom.com](https://r2symbols.obi.obianom.com)) in '((' or '`' like 
-
-`((SYMBOL NAME OR ID))` 
-
-or 
-
-``'SYMBOL NAME OR ID'``
-
-within the text in the document and watch r2symbols do the magic!
-
-
-## Examples: some sample outputs and codes
-
-### 0. Using this settings
-
-```{r eval=T}
-library(r2symbols)
-trans.r2symbols(font.color="blue", font.weight = "light",font.size = 32)
+```{r}
+symKey(keyword = "chess", font.size = 40)
 ```
 
+### Note
 
-### 1. Signs and Illustrative symbols (OUPUT)
+All other cool features of r2symbols are still available. View them by going to https://r2symbols.obi.obianom.com/
 
-Dignissim `box` suspendisse in est `heart` or `love` or `116` ante. Velit sed ullamcorper morbi tincidunt ornare massa `323` eget egestas purus. Id velit ut tortor `moon` pretium viverra `317` suspendisse. Non pulvinar`dia2` neque laoreet ((324)) suspendisse. Faucibus `umbrella` turpis in eu mi bibendum neque. Nisl `club2`nisi scelerisque eu ultrices vitae auctor eu `star` augue ut. Nulla pellentesque `cloud` dignissim enim sit `asterism`. Mattis pellentesque id `starm` nibh `:)`tortor c`#` d`#` id `music1` alique `star-o` t. Risus`:(` in hendrerit `.l` gravida rutrum. Consequat`chessk` or `c.k` nisl vel pretium`chessn` lectus `c.r`quam id leo in vitae. Donec`c.p` adipiscing tristique risus nec feugiat in fermentum posuere. Ornare arcu dui vivamus arcu.
-
-### 1. Signs and Illustrative symbols (CODE)
-
-```{r eval=F}
-Dignissim `box` suspendisse in est `heart` or `love` or `116` ante. Velit sed ullamcorper morbi tincidunt ornare massa `323` eget egestas purus. Id velit ut tortor `moon` pretium viverra `317` suspendisse. Non pulvinar`dia2` neque laoreet (( 324 )) suspendisse. Faucibus `umbrella` turpis in eu mi bibendum neque. Nisl `club2`nisi scelerisque eu ultrices vitae auctor eu `star` augue ut. Nulla pellentesque `cloud` dignissim enim sit `asterism`. Mattis pellentesque id `starm` nibh `:)`tortor c`#` d`#` id `music1` alique `star-o` t. Risus`:(` in hendrerit `.l` gravida rutrum. Consequat`chessk` or `c.k` nisl vel pretium`chessn` lectus `c.r`quam id leo in vitae. Donec`c.p` adipiscing tristique risus nec feugiat in fermentum posuere. Ornare arcu dui vivamus arcu.
-```
-
-
-
-### 2. Currencies, and frequently used in symbols (OUTPUT)
-
-Vitae`section` or `44` sapien pellent`cedi` esque habitant morbi. Sed blandit libero volut`34` or `registered` or `34` pat sed. Tincidunt eget nullam non nisi. Tortor consequat id porta nibh venenatis.  `copyright` or `c` venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aenean euismod`yen` elementum nisi quis eleifend quam. Libero `won` enim sed faucibus turpis in eu mi.Gravida `euro`quis blandit turpis `trademark` cursus in hac habita `tm` sse platea. Tincidunt`naira` nunc pulvinar`yen` sapien et ligula ullamc`pound`orper malesuada. Convallis `309` convallis tellus `no` id interdum velit laoreet`rupee` id donec ultrices. Nisi`yen` scelerisque eu ultrice`peso`s vitae auctor eu. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Velit euismod in pellentesque massa placerat duis ultricies lacus. 
-
-### 2. Currencies, and frequently used in symbols (CODE)
-
-```{r eval=F}
-Vitae`section` or `44` sapien pellent`cedi` esque habitant morbi. Sed blandit libero volut`34` or `registered` or `34` pat sed. Tincidunt eget nullam non nisi. Tortor consequat id porta nibh venenatis.  `copyright` or `c` venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aenean euismod`yen` elementum nisi quis eleifend quam. Libero `won` enim sed faucibus turpis in eu mi.Gravida `euro`quis blandit turpis `trademark` cursus in hac habita `tm` sse platea. Tincidunt`naira` nunc pulvinar`yen` sapien et ligula ullamc`pound`orper malesuada. Convallis `309` convallis tellus `no` id interdum velit laoreet`rupee` id donec ultrices. Nisi`yen` scelerisque eu ultrice`peso`s vitae auctor eu. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Velit euismod in pellentesque massa placerat duis ultricies lacus. 
-```
-
-
-### 3. Mathematical characters within text (OUTPUT) ...
-
-Lorem `b` ipsum((0/00)) dolor sit amet, conse ((integral)) or `integral` or `261` ctetur `-+` adipiscing `+-` elit, sed do 5 `0/00` eiusmod tempor `u`g/mL incididunt ut labore `107` et dolore `.+` magna `1.5` aliqua. Nisl `alpha` condimentum `a` id venenatis `beta`a . Accumsan `om` tortor `^o` posuere `omega` ac ut ((103)) consequat. Dignissim ((mu)) convallis ((chi)) aenean et ((quarter))tortor at risus `e` viverra `sqrt` adipiscing. Ullamcorper `d` malesuada `k`proin libero`K` nunc. Biben `tf` dum `1.5` est ultricies `1.25` integer quis `0.75` auctor elit. Ut Infinity `inf` or ((inf)) or ((161)) porttitor leo a  diam `ftrt`sollicitudin. Arcu `mangle` non odio `e` euismod `E` lacinia`pi` at. 
-
-### 3. Mathematical characters within text (CODE) ...
-
-```{r eval=F}
-Lorem `b` ipsum(( 0/00 )) dolor sit amet, conse (( integral )) or `integral` or `261` ctetur `-+` adipiscing `+-` elit, sed do 5 `0/00` eiusmod tempor `u`g/mL incididunt ut labore `107` et dolore `.+` magna `1.5` aliqua. Nisl `alpha` condimentum `a` id venenatis `beta`a . Accumsan `om` tortor `^o` posuere `omega` ac ut ((103)) consequat. Dignissim (( mu )) convallis (( chi )) aenean et (( quarter ))tortor at risus `e` viverra `sqrt` adipiscing. Ullamcorper `d` malesuada `k`proin libero`K` nunc. Biben `tf` dum `1.5` est ultricies `1.25` integer quis `0.75` auctor elit. Ut Infinity `inf` or (( inf )) or (( 161 )) porttitor leo a diam `ftrt`sollicitudin. Arcu `mangle` non odio `e` euismod `E` lacinia`pi` at. 
-```
-
-
-### 4. Arrows (OUPUT)
-Consectetur purus ut `arrow-left` faucibus pulvinar elementum integer `lra`enim neque. Quam id leo in `da`vitae turpis massa `ra`sed elementum tempus. A erat nam at lectus urna duis convallis convallis tellus. Porttitor eget dolor morbi non arcu risus quis`upa` varius.Amet luctus venenatis lectus magna. Blandit volutpat maecenas`ua` volutpat blandit aliquam etiam erat velit. `arrow-right` Eget sit amet tellus `la`cras adipiscing.
-
-
-### 4. Arrows (CODE)
-
-```{r eval=F}
-Consectetur purus ut `arrow-left` faucibus pulvinar elementum integer `lra`enim neque. Quam id leo in `da`vitae turpis massa `ra`sed elementum tempus. A erat nam at lectus urna duis convallis convallis tellus. Porttitor eget dolor morbi non arcu risus quis`upa` varius.Amet luctus venenatis lectus magna. Blandit volutpat maecenas`ua` volutpat blandit aliquam etiam erat velit. `arrow-right` Eget sit amet tellus `la`cras adipiscing.
-```
-
-
-
-
-
-## Version 0.1 features are still available
-
-You can still do something like `symbol.units("ug/mL")` -> `r symbol.units("ug/mL")` for ug/mL
-
-You may also use `symbol(90)` or shortform `sym(90)`
-
-You can still declare the settings for the symbols like `r sym("heart","sqrt","half",font.size=40,font.weight ="normal",font.color = "purple")`
-
-code - 
-
-```{r eval=F}
-symbol.units("ug/mL")
-symbol(90)
-sym(90)
-sym("heart","sqrt","half",font.size=50,font.weight ="bold",font.color = "red")
-```
-
-## Where documentation for list of symbols and how to call them is at the link below
-
- - https://r2symbols.obi.obianom.com/
-
- - https://github.com/oobianom/r2symbols

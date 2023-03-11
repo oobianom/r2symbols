@@ -8,7 +8,6 @@ knitr::opts_chunk$set(
 library(r2symbols)
 symbol("alpha")
 symbol("beta")
-symbol("apple")
 symbol("mouse")
 symbol(456)
 
