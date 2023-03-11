@@ -17,7 +17,7 @@
 #' symCat("arrows")
 #' symCat("smiley", font.size = 32)
 #' symCat("music")
-#' symCat("random") # should work
+#' symCat("random") # should not work
 #'
 #' @export
 
