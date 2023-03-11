@@ -64,10 +64,10 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #' @return get symbols from a particular category
 #'
 #' @examples
-#' symKey("arrows")
-#' symKey("smiley")
-#' symKey("music")
-#' symKey("random")
+#' symKey("arrow", font.size = 45)
+#' symKey("animal", font.color = "red")
+#' symKey("random454")
+#' symKey("show nothing")
 #'
 #' @export
 
