@@ -25,7 +25,7 @@
 
 symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
 
-  # remove non-alphnumeric
+  # remove non-alphanumeric
   category <- gsub("[^a-zA-Z]","",category)
 
   # exit if category is less than 4 characters
@@ -52,7 +52,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #'
 #' Fetch one or more symbols by keyword
 #'
-#' @param Keyword symbol keyword to fetch
+#' @param keyword symbol keyword to fetch
 #' @param font.size font size as integer
 #' @param font.weight font weight as integer
 #' @param font.color font color e.g. red, blue, cyan
@@ -73,8 +73,25 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #'
 #' @export
 
-symKey <- function(Keyword, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
+symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
 
-  # codes
+  # remove non-alphanumeric
+  keyword <- gsub("[^a-zA-Z]","",keyword)
+
+  # exit if keyword is less than 4 characters
+  if(nchar(keyword) < 4) stop("Provide at atleast 4 characters for the category")
+
+  # load symbols if not loaded
+  if(!exists('.symbols_ph'))symload(font.size = font.size, font.weight = font.weight, font.color = font.color)
+
+  # select symbols by keyword
+  sym.list <- .symbols[grep(keyword,.symbols$alias2,ignore.case = TRUE) & (!is.na(.symbols$alias)),]$alias
+
+  # return error if no symbols are picked, else return symbols
+  if(length(sym.list)){
+    symbol(sym.list,font.size = font.size, font.weight = font.weight, font.color = font.color)
+  }else{
+    warning("No symbols match the keyword term that was entered")
+  }
 
 }
