@@ -26,18 +26,24 @@ R2SYMBOLS package introduced two new functions that allows inclusion of multiple
 ```{r eval=FALSE}
 library(r2symbols)
 ```
-
-### Use the symCat() function
-
-```{r}
-symCat(category = "arrow", font.color="gray", font.weight = "light",font.size = 20)
-```
-
-### Use the symCat() function
+### Use the symKey() function
 
 ```{r}
+# fetch a group of symbols by using keywords
 symKey(keyword = "chess", font.size = 40)
 ```
+
+### Use the symCat() function
+
+```{r}
+# fetch a group of symbols by using category words
+symCat(category = "arrow", font.color="blue", font.size = 20)
+symCat(category = "people", font.color="gray", font.weight = "light",font.size = 50)
+symCat(category = "emoji", font.color="gray", font.weight = "light",font.size = 22)
+
+```
+
+
 
 ### Note
 

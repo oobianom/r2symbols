@@ -34,7 +34,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
   if(!exists('.symbols_ph'))symload(font.size = font.size, font.weight = font.weight, font.color = font.color)
 
   # select symbols by category
-  sym.list <- .symbols[grep(category,.symbols$category,ignore.case = TRUE) & (!is.na(.symbols$alias)),]$alias
+  sym.list <- .symbols[grepl(category,.symbols$category,ignore.case = TRUE) & (!is.na(.symbols$alias)),]$alias
 
   # return error if no symbols are picked, else return symbols
   if(length(sym.list)){
@@ -83,7 +83,7 @@ symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = N
   if(!exists('.symbols_ph'))symload(font.size = font.size, font.weight = font.weight, font.color = font.color)
 
   # select symbols by keyword
-  sym.list <- .symbols[grep(keyword,.symbols$alias2,ignore.case = TRUE) & (!is.na(.symbols$alias)),]$alias
+  sym.list <- .symbols[grepl(keyword,.symbols$alias2,ignore.case = TRUE) & (!is.na(.symbols$alias)),]$alias
 
   # return error if no symbols are picked, else return symbols
   if(length(sym.list)){
