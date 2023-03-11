@@ -38,6 +38,6 @@ skull sign star telephone weather zodiac smiley hourglass fraction cards triangl
 symCat("arrows")
 symCat("smiley", font.size = 32)
 symCat("music")
-symCat("random")
+symCat("random") # should not work
 
 }

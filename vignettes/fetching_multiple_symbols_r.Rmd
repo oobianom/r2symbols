@@ -36,6 +36,11 @@ symKey(keyword = "chess", font.size = 40)
 symKey(keyword = "chf34ess", font.size = 40)
 ```
 
+```{r eval=FALSE}
+# when the keyword is not up to 4 characters
+symKey(keyword = "chf", font.size = 40) # retruns error
+```
+
 ### Use the symCat() function
 
 ```{r}
@@ -44,7 +49,7 @@ symKey(keyword = "chf34ess", font.size = 40)
 symCat(category = "arrow", font.color="blue", font.size = 20)
 symCat(category = "people", font.color="gray", font.weight = "light",font.size = 50)
 symCat(category = "emoji", font.color="gray", font.weight = "light",font.size = 22)
-
+symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
 ```
 
 
