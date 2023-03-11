@@ -7,7 +7,6 @@
 #' @param font.weight font weight as integer
 #' @param font.color font color e.g. red, blue, cyan
 #' @param if.error error response
-#' @param search.units.each whether to search single letter columns
 #'
 #' @section Complete cheatcheat for symbols:
 #' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
@@ -23,7 +22,7 @@
 #'
 #' @export
 
-symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
+symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = TRUE) {
 
   # remove non-alphanumeric
   category <- gsub("[^a-zA-Z]","",category)
@@ -41,7 +40,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
   if(length(sym.list)){
     symbol(sym.list, font.size = font.size, font.weight = font.weight, font.color = font.color)
   }else{
-    warning("No symbols match the category term that was entered")
+    if(if.error) warning("No symbols match the category term that was entered")
   }
 
 }
@@ -57,7 +56,6 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #' @param font.weight font weight as integer
 #' @param font.color font color e.g. red, blue, cyan
 #' @param if.error error response
-#' @param search.units.each whether to search single letter columns
 #'
 #' @section Complete cheatcheat for symbols:
 #' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
@@ -73,7 +71,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #'
 #' @export
 
-symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = FALSE, search.units.each = FALSE) {
+symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = NULL, if.error = TRUE) {
 
   # remove non-alphanumeric
   keyword <- gsub("[^a-zA-Z]","",keyword)
@@ -91,7 +89,7 @@ symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = N
   if(length(sym.list)){
     symbol(sym.list, font.size = font.size, font.weight = font.weight, font.color = font.color)
   }else{
-    warning("No symbols match the keyword term that was entered")
+    if(if.error) warning("No symbols match the keyword term that was entered")
   }
 
 }
