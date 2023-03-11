@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' symCat("arrows")
-#' symCat("smiley")
+#' symCat("smiley", font.size = 32)
 #' symCat("music")
 #' symCat("random")
 #'
