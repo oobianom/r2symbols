@@ -37,7 +37,7 @@ Common symbols include alpha, beta, copyright, registered, theta, sigma. See the
 
 \examples{
 symCat("arrows")
-symCat("smiley")
+symCat("smiley", font.size = 32)
 symCat("music")
 symCat("random")
 
