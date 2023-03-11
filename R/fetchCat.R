@@ -6,7 +6,7 @@
 #' @param font.size font size as integer
 #' @param font.weight font weight as integer
 #' @param font.color font color e.g. red, blue, cyan
-#' @param if.error error response
+#' @param if.error show error response
 #'
 #' @section Complete cheatcheat for symbols:
 #' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
@@ -55,7 +55,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #' @param font.size font size as integer
 #' @param font.weight font weight as integer
 #' @param font.color font color e.g. red, blue, cyan
-#' @param if.error error response
+#' @param if.error show error response
 #'
 #' @section Complete cheatcheat for symbols:
 #' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
