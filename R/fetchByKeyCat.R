@@ -8,11 +8,10 @@
 #' @param font.color font color e.g. red, blue, cyan
 #' @param if.error show error response
 #'
-#' @section Complete cheatcheat for symbols:
-#' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
-#' \url{https://github.com/oobianom/r2symbols}.
+#' @section Categories include: arrows mixed chess check mark symbol animal emoji flag people
+#' skull sign star telephone weather zodiac smiley hourglass fraction cards triangle square
 #'
-#' @return get symbols from a particular category
+#' @return get symbols from matching a particular category
 #'
 #' @examples
 #' symCat("arrows")
@@ -61,7 +60,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 #' Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
 #' \url{https://github.com/oobianom/r2symbols}.
 #'
-#' @return get symbols from a particular category
+#' @return get group of symbols maptching a particular keyword
 #'
 #' @examples
 #' symKey("arrow", font.size = 45)

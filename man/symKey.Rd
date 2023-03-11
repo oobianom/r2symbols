@@ -24,7 +24,7 @@ symKey(
 \item{if.error}{show error response}
 }
 \value{
-get symbols from a particular category
+get group of symbols maptching a particular keyword
 }
 \description{
 Fetch one or more symbols by keyword

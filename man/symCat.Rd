@@ -24,15 +24,14 @@ symCat(
 \item{if.error}{show error response}
 }
 \value{
-get symbols from a particular category
+get symbols from matching a particular category
 }
 \description{
 Fetch one or more symbols by category
 }
-\section{Complete cheatcheat for symbols}{
-
-Common symbols include alpha, beta, copyright, registered, theta, sigma. See the complete list at
-\url{https://github.com/oobianom/r2symbols}.
+\section{Categories include}{
+ arrows mixed chess check mark symbol animal emoji flag people
+skull sign star telephone weather zodiac smiley hourglass fraction cards triangle square
 }
 
 \examples{

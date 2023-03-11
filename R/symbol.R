@@ -65,7 +65,7 @@ symbol <- function(..., font.size = NULL, font.weight = NULL, font.color = NULL,
         if (!is.null(getOption("r2symbols.font.color"))) span.style <- paste0(span.style, "color:", getOption("r2symbols.font.color"), "!important;")
       }
 
-      if (!is.null(span.style)) returnVal <- paste0("<span class='r2rsymbols-sym ", returnValId,"' style='", span.style, "'>", returnVal, "</span>")
+      if (!is.null(span.style)) returnVal <- paste0("<span class='r2rsymbols-sym sym-", returnValId,"' style='", span.style, "'>", returnVal, "</span>")
       tranhtml0 <- paste0(tranhtml0, returnVal)
 
     } else {
