@@ -23,7 +23,7 @@ R2SYMBOLS package introduced two new functions that allows inclusion of multiple
 
 ### Include library
 
-```{r eval=FALSE}
+```{r}
 library(r2symbols)
 ```
 ### Use the symKey() function
