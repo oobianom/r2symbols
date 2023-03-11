@@ -39,7 +39,7 @@ symCat <- function(category, font.size = NULL, font.weight = NULL, font.color = 
 
   # return error if no symbols are picked, else return symbols
   if(length(sym.list)){
-    symbol(sym.list)
+    symbol(sym.list, font.size = font.size, font.weight = font.weight, font.color = font.color)
   }else{
     warning("No symbols match the category term that was entered")
   }
@@ -89,7 +89,7 @@ symKey <- function(keyword, font.size = NULL, font.weight = NULL, font.color = N
 
   # return error if no symbols are picked, else return symbols
   if(length(sym.list)){
-    symbol(sym.list,font.size = font.size, font.weight = font.weight, font.color = font.color)
+    symbol(sym.list, font.size = font.size, font.weight = font.weight, font.color = font.color)
   }else{
     warning("No symbols match the keyword term that was entered")
   }
