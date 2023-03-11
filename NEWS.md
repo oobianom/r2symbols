@@ -1,9 +1,14 @@
 ![https://www.youtube.com/watch?v=TaR-bwZxfuA](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
 
-# r2symbols 1.4
+# r2symbols 1.5
 ## Planned Features
  - [ ] User interface for easy use of symbols
- - [ ] Functions to allow obtaining symbols belonging to a particular category
+
+
+# r2symbols 1.4
+## Features
+ - [ ] Fetch multiple symbols by keyword
+ - [ ] Fetch multiple symbols by category
  
 # r2symbols 1.3
 ## Features
